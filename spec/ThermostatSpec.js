@@ -29,8 +29,12 @@ describe("can change temperature", function(){
 
 describe("minimum and maximum temperatures", function(){
 
-  it("should have a maximum temperature of 32", function(){
+  it("should have a maximum temperature of 32 degrees", function(){
     expect(thermostat.maxTemp).toEqual(32)
+  });
+
+  it("should have a minimum temperature of 10 degrees", function(){
+    expect(thermostat.minTemp).toEqual(10)
   });
 });
 
