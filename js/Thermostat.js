@@ -28,3 +28,7 @@ Thermostat.prototype.decreaseTemp = function(changeTempBy){
 Thermostat.prototype.resetButton = function(){
   this.temperature = 20
 };
+
+Thermostat.prototype.powerSave = function(){
+  this.maxTemp = 25
+}

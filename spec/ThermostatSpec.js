@@ -57,4 +57,13 @@ describe("reset button", function(){
   });
 });
 
+describe("power save mode", function(){
+
+  it("should not be able to go above 25 degrees when power save is on", function(){
+    thermostat.powerSave()
+    thermostat.increaseTemp(12)
+    expect(thermostat.temperature).toEqual(25)
+  });
+});
+
 });
