@@ -7,7 +7,13 @@ var Thermostat = function(){
 };
 
 Thermostat.prototype.increaseTemp = function(changeTempBy){
-  this.temperature += changeTempBy
+  if(this.temperature + changeTempBy > this.maxTemp){
+    this.temperature = this.maxTemp
+  }
+  else {
+    this.temperature += changeTempBy  
+  }
+
 };
 
 Thermostat.prototype.decreaseTemp = function(changeTempBy){
