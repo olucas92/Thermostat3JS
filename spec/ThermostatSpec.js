@@ -27,4 +27,11 @@ describe("can change temperature", function(){
   });
 });
 
+describe("minimum and maximum temperatures", function(){
+
+  it("should have a maximum temperature of 32", function(){
+    expect(thermostat.maxTemp).toEqual(32)
+  });
+});
+
 });
