@@ -20,6 +20,11 @@ describe("can change temperature", function(){
     thermostat.increaseTemp(5)
     expect(thermostat.temperature).toEqual(25)
   });
+
+  it("thermostat can decrease temperature", function(){
+    thermostat.decreaseTemp(3)
+    expect(thermostat.temperature).toEqual(17)
+  });
 });
 
 });
