@@ -66,4 +66,12 @@ describe("power save mode", function(){
   });
 });
 
+describe("power usage colour co-ordination", function(){
+
+  it("should be red when 25 degrees or over", function(){
+    thermostat.increaseTemp(8)
+    expect(thermostat.energyColour).toBe("high-usage")
+  });
+});
+
 });
