@@ -27,4 +27,9 @@ $(document).ready(function(){
     thermostat.decreaseTemp(1)
     updateTemperature();
   });
+
+  $('.reset').on('click', function(){
+    thermostat.resetButton();
+    updateTemperature();
+  });
 });
