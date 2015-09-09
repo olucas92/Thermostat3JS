@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%; 
+}
+
+span img {
+  height: calc(100% - 25px);
+  margin-left: -0.5em;
+}
+
+#left {
+  float: left;
+  width: 55%;
+  height: 100%;
+}
+
+#right {
+  float: left;
+  width: 45%;
+  height: 100%;
+  background-color: black;
+  text-align: left;
+}
+
+#contents {
+  display: inline;
+  float: right;
+  height: 58%;
+  width: 100%;
+  margin-top: 25%;
+  margin-bottom: 15%;
+  margin-right: 0.9em;
+  text-align: right;
+}
+
+#energy-colour {
+  font-size: 14.5vw;
+  height: 45%;
+}
+
+.low-usage {
+  color: green;
+}
+
+.medium-usage {
+  color: orange;
+}
+
+.high-usage {
+  color: red;
+}
+
+
+#plus-minus-reset {
+  margin: 0.3em 0.3em 0 0;
+}
+
+#plus-minus-reset p {
+  display: inline;
+  font-size: 2vw;
+  padding-left: 0.4em;
+}
+
+#contents button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+#power-saving-mode {
+  font-size: 1.4em;
+  margin: 0.3em 0.3em 0 0;
+  font-size: 1.72vw;
+  background-color: red;
+}
+
+.blue {
+  color: #00CCFF;
+}
+
+.nothing {
+
+}
+
+#holiday-mode {
+  font-size: 1.4vw;
+  margin: 0.3em 0.3em 0 0;
+}
+
+#degrees {
+  margin-left: -0.03em;
+}
+
+#bar {
+  background-color: red;
+}
+
+#psm {
+  background-color: white;
+  padding-left: 1em;
+}
