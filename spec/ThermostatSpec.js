@@ -72,6 +72,11 @@ describe("power usage colour co-ordination", function(){
     thermostat.increaseTemp(8)
     expect(thermostat.energyColour).toBe("high-usage")
   });
+
+  it("should be green when between 18 and 24 degrees", function(){
+    thermostat.increaseTemp(1)
+    expect(thermostat.energyColour).toBe("medium-usage")
+  });
 });
 
 });
