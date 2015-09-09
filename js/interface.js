@@ -15,13 +15,8 @@ var removeColour = function(){
   $('#energy-colour').removeClass();
 };
 
-var powerSavingMode = function(){
-  ('#power-saving-mode').addClass(thermostat.powerSave())
-}
 
-var removePowerSavingMode = function(){
-  ('#power-saving-mode').removeClass(thermostat.powerSave())
-}
+
 
 $(document).ready(function(){
   updateTemperature();
@@ -41,9 +36,8 @@ $(document).ready(function(){
     updateTemperature();
   });
 
-  $('#power-save').on('click', function(){
-    thermostat.powerSavingMode();
-    thermostat.powerSave();
+  $('#power-saving').on('click', function(){
+    thermostat.togglePowerSavingMode();
     updateTemperature();
   });
 });
