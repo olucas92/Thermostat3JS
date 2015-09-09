@@ -40,4 +40,6 @@ $(document).ready(function(){
     thermostat.togglePowerSavingMode();
     updateTemperature();
   });
+
+  $('#time').text(thermostat.currentTime());
 });

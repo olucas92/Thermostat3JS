@@ -71,3 +71,10 @@ Thermostat.prototype.setColour = function(){
     this.energyColour = "medium-usage"
   }
 }
+
+Thermostat.prototype.currentTime = function(){
+  var date = new Date();
+  var hour = date.getHours();
+  var minute = date.getMinutes();
+  return hour + ':' + minute;
+};
