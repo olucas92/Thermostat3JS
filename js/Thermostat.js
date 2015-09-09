@@ -42,7 +42,7 @@ Thermostat.prototype.setColour = function(){
   if(this.temperature > 24){
     this.energyColour = "high-usage"
   }
-  else if(this.temperature < 18){
+  else if(this.temperature < 19){
     this.energyColour = "low-usage"
   }
   else {

@@ -77,6 +77,11 @@ describe("power usage colour co-ordination", function(){
     thermostat.increaseTemp(1)
     expect(thermostat.energyColour).toBe("medium-usage")
   });
+
+  it("should be blue when 18 degrees or below", function(){
+    thermostat.decreaseTemp(5)
+    expect(thermostat.energyColour).toBe("low-usage")
+  });
 });
 
 });
